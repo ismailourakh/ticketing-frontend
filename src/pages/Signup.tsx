@@ -7,7 +7,7 @@ export default function Signup() {
 
   const handleSignup = async () => {
     try {
-      const res = await API.post("/auth/signup", {
+      await API.post("/auth/signup", {
         email,
         password,
       });
